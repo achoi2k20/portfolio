@@ -8,10 +8,10 @@ import './BandScene.css'
 export default function BandScene() {
   return (
     <div className="bandscene-container">
+
       {/* Text behind */}
-      <div className="text-side">
-        <h1>Aidan Choi</h1>
-        <p>Welcome to my portfolio! Check out my projects and about me.</p>
+      <div className="text-side-left">
+        <h1>Start now. Think later.</h1>
       </div>
 
       {/* Band on top */}
@@ -32,6 +32,10 @@ export default function BandScene() {
           </Environment>
         </Canvas>
       </div>
+      <div className="text-side-right">
+        <p>A collection of works created by Aidan Choi.</p>
+      </div>
+      
     </div>
   )
 }
