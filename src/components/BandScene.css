@@ -1,0 +1,39 @@
+.bandscene-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: #F0F0F0;
+  overflow: hidden;
+}
+
+.text-side {
+  position: relative;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  z-index: 0; /* behind */
+  color: rgba(0, 0, 0, 0.8);
+  max-width: 300px;
+  font-family: Arial, sans-serif;
+  user-select: none;
+}
+
+.text-side h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.text-side p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.band-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1; /* on top */
+  pointer-events: auto; /* allows interaction */
+}
