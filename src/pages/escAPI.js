@@ -19,14 +19,14 @@ export default function EscAPI() {
       <div className="case-study">
         <header className="case-header">
           <h1>Case Study: escAPI</h1>
-          <p>Exploring the design, challenges, and solutions behind building an immersive web portfolio.</p>
+          <p>This project is a first-person escape room game built with a Three.js scene integrated into React. It features interactive 3D models, animations, camera controls, and object collision detection. The environment includes items like a suitcase, bookshelf, desk, book, and door, which users can interact with to solve puzzles. These puzzles reveal a passcode that unlocks the door, allowing the player to escape.</p>
         </header>
 
         <section className="case-section">
           <div className="case-text">
             <h2>Project Overview</h2>
             <p>
-              This project aimed to create a visually striking, interactive portfolio using React Three Fiber and Rapier physics. The goal was to blend storytelling with 3D interaction to leave a lasting impression on users.
+              We used SQL to create logins, leaderboard data, and save progress. On the website, users can input information to create an account, and passwords are hash encrypted.
             </p>
           </div>
           <img src="/projects/room1.png" alt="Case Study Overview" className="case-image" />
@@ -36,20 +36,13 @@ export default function EscAPI() {
           <div className="case-text">
             <h2>Challenges & Solutions</h2>
             <p>
-              One major challenge was ensuring physics interactions remained smooth across screen sizes. We used responsive layout techniques and optimized physics calculations to solve this. Texture mapping and lighting were tuned for realism without heavy performance cost.
+              This puzzle is a sliding tile puzzle. The image of the number is randomized and users are meant to slide the tiles to form the image of the number, which can be used to unlock the door at the end. 
             </p>
           </div>
           <img src="/projects/room2.png" alt="Case Study Overview" className="case-image" />
         </section>
 
-        <section className="case-section">
-          <div className="case-text">
-            <h2>Outcome</h2>
-            <p>
-              The final site performs well across devices, offers unique visual interactions, and has received strong feedback from users and employers. It stands as a testament to modern web development combining design and engineering.
-            </p>
-          </div>
-        </section>
+        
       </div>
     </>
   )

@@ -19,27 +19,20 @@ export default function Funtent() {
       <div className="case-study">
         <header className="case-header">
           <h1>Case Study: Funtent</h1>
-          <p>Exploring the design, challenges, and solutions behind building an immersive web portfolio.</p>
+          <p>For my user experience design class, I created an app for curated child-friendly content based on user research. I conducted user research and created a problem statement, then developed wireframes and prototypes for the product.</p>
         </header>
 
         <section className="case-section">
           <div className="case-text">
-            <h2>Project Overview</h2>
+            <h2>Mockup</h2>
             <p>
-              This project aimed to create a visually striking, interactive portfolio using React Three Fiber and Rapier physics. The goal was to blend storytelling with 3D interaction to leave a lasting impression on users.
+              With all of the interviews and preliminary research done, I created a mockup after multiple prototypes. The prototype is functional, and meant to display the processes a user would go through on this app. Parents can add filters to content and approve/reject content that their child would like to watch. There is also a rating system where parents can rate the appropriateness of content.
             </p>
           </div>
           <img src="/projects/FUNTENT+Wireframe.png" alt="Case Study Overview" className="case-image" />
         </section>
 
-        <section className="case-section">
-          <div className="case-text">
-            <h2>Outcome</h2>
-            <p>
-              The final site performs well across devices, offers unique visual interactions, and has received strong feedback from users and employers. It stands as a testament to modern web development combining design and engineering.
-            </p>
-          </div>
-        </section>
+      
       </div>
     </>
   )
