@@ -43,13 +43,17 @@ export default function Band({ maxSpeed = 50, minSpeed = 10 }) {
     }
     if (fixed.current) {
       // Fix most of the jitter when over pulling the card
-      ;[j1, j2, j3].forEach((ref) => {
+      ;[j1, j2].forEach((ref) => {
         if (!ref.current.lerped) ref.current.lerped = new THREE.Vector3().copy(ref.current.translation())
         const clampedDistance = Math.max(0.1, Math.min(1, ref.current.lerped.distanceTo(ref.current.translation())))
         ref.current.lerped.lerp(ref.current.translation(), delta * (minSpeed + clampedDistance * (maxSpeed - minSpeed)))
       })
-      // Calculate catmul curve
-      curve.points[0].copy(j3.current.lerped)
+      // Anchor band start to the card's exact attachment point in world space
+      const cardT = card.current.translation()
+      const cardR = card.current.rotation()
+      const q = new THREE.Quaternion(cardR.x, cardR.y, cardR.z, cardR.w)
+      const attach = new THREE.Vector3(0, 1.45, 0).applyQuaternion(q)
+      curve.points[0].set(cardT.x + attach.x, cardT.y + attach.y, cardT.z + attach.z)
       curve.points[1].copy(j2.current.lerped)
       curve.points[2].copy(j1.current.lerped)
       curve.points[3].copy(fixed.current.translation())
