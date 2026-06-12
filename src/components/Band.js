@@ -17,7 +17,7 @@ export default function Band({ maxSpeed = 50, minSpeed = 10 }) {
   const { nodes, materials } = useGLTF('/card.glb')
   const texture = useTexture('/band.png')
   const { width, height } = useThree((state) => state.size)
-  const [curve] = useState(() => new THREE.CatmullRomCurve3([new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3()]))
+  const [curve] = useState(() => new THREE.CatmullRomCurve3([new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3(), new THREE.Vector3()]))
   const [dragged, drag] = useState(false)
   const [hovered, hover] = useState(false)
 
@@ -54,9 +54,10 @@ export default function Band({ maxSpeed = 50, minSpeed = 10 }) {
       const q = new THREE.Quaternion(cardR.x, cardR.y, cardR.z, cardR.w)
       const attach = new THREE.Vector3(0, 1.45, 0).applyQuaternion(q)
       curve.points[0].set(cardT.x + attach.x, cardT.y + attach.y, cardT.z + attach.z)
-      curve.points[1].copy(j2.current.lerped)
-      curve.points[2].copy(j1.current.lerped)
-      curve.points[3].copy(fixed.current.translation())
+      curve.points[1].copy(j3.current.translation())
+      curve.points[2].copy(j2.current.lerped)
+      curve.points[3].copy(j1.current.lerped)
+      curve.points[4].copy(fixed.current.translation())
       band.current.geometry.setPoints(curve.getPoints(32))
       // Tilt it back towards the screen
       ang.copy(card.current.angvel())
