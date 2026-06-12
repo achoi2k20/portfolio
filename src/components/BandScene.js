@@ -9,9 +9,12 @@ export default function BandScene() {
   return (
     <div className="bandscene-container">
 
+      <span className="hero-index">Aidan Choi — 2026</span>
+
       {/* Text behind */}
       <div className="text-side-left">
-        <h1>Start now. Think later.</h1>
+        <span className="hero-eyebrow">Portfolio</span>
+        <h1>Start now.<br />Think later.</h1>
       </div>
 
       {/* Band on top */}
@@ -33,9 +36,15 @@ export default function BandScene() {
         </Canvas>
       </div>
       <div className="text-side-right">
-        <p>A collection of works created by Aidan Choi.</p>
+        <span className="hero-eyebrow">Based in Mountain View, CA</span>
+        <p>A collection of works in UX design, product thinking, and interactive development.</p>
       </div>
-      
+
+      <div className="hero-scroll-hint">
+        <div className="hero-scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+
     </div>
   )
 }
