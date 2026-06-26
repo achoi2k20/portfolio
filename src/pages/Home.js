@@ -67,20 +67,24 @@ export default function Home() {
       <section className="home-showcase">
         <span className="home-sec-num">03</span>
         <div className="home-showcase-inner">
-          <div className="home-showcase-card">
-            <img src="/projects/secuvy_solutionbrief_p1.png" alt="Secuvy Solution Brief" />
-            <div className="home-showcase-label">
-              <span className="showcase-title">Secuvy Solution Brief</span>
-              <span className="showcase-type">Document Design</span>
+          <a href="/projects/secuvy" className="home-showcase-link">
+            <div className="home-showcase-card">
+              <img src="/projects/secuvy_solutionbrief_p1.png" alt="Secuvy Solution Brief" />
+              <div className="home-showcase-label">
+                <span className="showcase-title">Secuvy Solution Brief</span>
+                <span className="showcase-type">Document Design</span>
+              </div>
             </div>
-          </div>
-          <div className="home-showcase-card">
-            <img src="/projects/website_draft1.png" alt="Secuvy Website Draft" />
-            <div className="home-showcase-label">
-              <span className="showcase-title">Secuvy Website</span>
-              <span className="showcase-type">Web Design</span>
+          </a>
+          <a href="/projects/secuvy" className="home-showcase-link">
+            <div className="home-showcase-card">
+              <img src="/projects/website_draft1.png" alt="Secuvy Website Draft" />
+              <div className="home-showcase-label">
+                <span className="showcase-title">Secuvy Website</span>
+                <span className="showcase-type">Web Design</span>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
       </section>
 

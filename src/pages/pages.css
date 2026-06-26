@@ -364,6 +364,12 @@
   gap: 2.5rem;
 }
 
+.home-showcase-link {
+  display: contents;
+  text-decoration: none;
+  color: inherit;
+}
+
 .home-showcase-card {
   display: flex;
   flex-direction: column;
@@ -409,6 +415,97 @@
   color: #666;
   letter-spacing: 0.15em;
   text-transform: uppercase;
+}
+
+/* ── Secuvy Case Study ── */
+.secuvy-nav {
+  background: rgba(17, 17, 17, 0.85) !important;
+}
+
+.secuvy-nav .nav-links li a {
+  color: #F0F0F0 !important;
+}
+
+.secuvy-hero {
+  padding-top: 9rem;
+}
+
+.secuvy-meta {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  border-top: 1px solid #ddd;
+  padding-top: 2rem;
+}
+
+.secuvy-meta-item h4 {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #666;
+  margin: 0 0 0.5rem 0;
+}
+
+.secuvy-meta-item p {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.secuvy-cat-label {
+  display: block;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.secuvy-cat-label--light {
+  color: #888;
+}
+
+.secuvy-sub-gap {
+  margin-top: 1.5rem;
+}
+
+.secuvy-project-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.secuvy-dark-image {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.secuvy-light-image {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.secuvy-section-heading {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.1;
+  color: #111;
+  margin: 0 0 1.25rem 0;
+}
+
+.secuvy-section-heading em {
+  font-style: italic;
+}
+
+.secuvy-section-body {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: #555;
 }
 
 /* ── Tagline ── */

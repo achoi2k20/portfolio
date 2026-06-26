@@ -7,6 +7,7 @@ import GlobalGourmet from './pages/GlobalGourmet'
 import EscAPI from './pages/escAPI'
 import Ux4xr from './pages/ux4xr'
 import Funtent from './pages/Funtent'
+import Secuvy from './pages/Secuvy'
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
       <Route path="/projects/funtent" element={<Funtent />} />
       <Route path="/projects/globalgourmet" element={<GlobalGourmet />} />
       <Route path="/projects/escapi" element={<EscAPI />} />
+      <Route path="/projects/secuvy" element={<Secuvy />} />
     </Routes>
   )
 }
