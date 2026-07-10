@@ -553,6 +553,23 @@
   gap: 0.4rem;
 }
 
+.secuvy-writeup--dark .secuvy-writeup-title {
+  color: #F0F0F0;
+  border-bottom-color: rgba(255, 255, 255, 0.15);
+}
+
+.secuvy-writeup--dark .secuvy-writeup-block {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+.secuvy-writeup--dark .secuvy-writeup-label {
+  color: #888;
+}
+
+.secuvy-writeup--dark .secuvy-section-body {
+  color: #888;
+}
+
 /* ── Tagline ── */
 .home-tagline-section {
   background: #111;

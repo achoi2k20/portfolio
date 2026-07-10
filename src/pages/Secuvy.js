@@ -60,45 +60,32 @@ export default function Secuvy() {
             <span className="secuvy-cat-label">Document Design</span>
             <span className="banner-line">Solution</span>
             <span className="banner-line banner-line--italic">Brief.</span>
-            <p className="home-banner-sub secuvy-sub-gap">
-              A polished sales and marketing collateral piece designed to communicate
-              Secuvy's core value proposition. The layout balances technical credibility
-              with visual clarity — pairing structured content with intentional whitespace
-              and a strong typographic hierarchy.
-            </p>
+            <div className="secuvy-writeup secuvy-writeup--inline secuvy-writeup--dark">
+              <div className="secuvy-writeup-block secuvy-writeup-block--inline">
+                <span className="secuvy-writeup-label">Overview</span>
+                <p className="secuvy-section-body">
+                  A single-page sales document designed to communicate Secuvy's value proposition to enterprise buyers. The brief introduces the problem, solution, and key outcomes in a structured, scannable layout — built for a sales or partnership context with Hammerspace.
+                </p>
+              </div>
+              <div className="secuvy-writeup-block secuvy-writeup-block--inline">
+                <span className="secuvy-writeup-label">Design decisions</span>
+                <p className="secuvy-section-body">
+                  The layout uses a clear two-column structure: a wider editorial column on the left for narrative content, and a tighter sidebar on the right for quick-reference information (target outcomes, audience, sectors, deployment). A dark navy header callout draws immediate attention to the "Target Outcomes" section. The bottom strip of three feature tiles (Autoclassification, Contextual Linkage, Trusted Data Plane) anchors the page with product proof points without disrupting the reading flow above.
+                </p>
+              </div>
+              <div className="secuvy-writeup-block secuvy-writeup-block--inline">
+                <span className="secuvy-writeup-label">What works</span>
+                <p className="secuvy-section-body">
+                  Strong visual hierarchy — the bold headline "Your AI Is Ingesting Unclassified Data." is provocative and specific. The sidebar isolates key buyer questions (Who's it for? What sectors? How do I deploy?) so decision-makers can scan without reading the full doc. The Secuvy brand blue is used sparingly to maintain professionalism.
+                </p>
+              </div>
+            </div>
           </div>
           <img
             src="/projects/secuvy_solutionbrief_p1.png"
             alt="Secuvy Solution Brief"
             className="secuvy-project-image secuvy-dark-image"
           />
-        </div>
-      </section>
-
-      {/* 03b — Solution Brief Write-up */}
-      <section className="home-work">
-        <div className="home-work-inner">
-          <div className="secuvy-writeup">
-            <h3 className="secuvy-writeup-title">Secuvy AI — Solution Brief</h3>
-            <div className="secuvy-writeup-block">
-              <span className="secuvy-writeup-label">Overview</span>
-              <p className="secuvy-section-body">
-                A single-page sales document designed to communicate Secuvy's value proposition to enterprise buyers. The brief introduces the problem, solution, and key outcomes in a structured, scannable layout — built for a sales or partnership context with Hammerspace.
-              </p>
-            </div>
-            <div className="secuvy-writeup-block">
-              <span className="secuvy-writeup-label">Design decisions</span>
-              <p className="secuvy-section-body">
-                The layout uses a clear two-column structure: a wider editorial column on the left for narrative content, and a tighter sidebar on the right for quick-reference information (target outcomes, audience, sectors, deployment). A dark navy header callout draws immediate attention to the "Target Outcomes" section. The bottom strip of three feature tiles (Autoclassification, Contextual Linkage, Trusted Data Plane) anchors the page with product proof points without disrupting the reading flow above.
-              </p>
-            </div>
-            <div className="secuvy-writeup-block">
-              <span className="secuvy-writeup-label">What works</span>
-              <p className="secuvy-section-body">
-                Strong visual hierarchy — the bold headline "Your AI Is Ingesting Unclassified Data." is provocative and specific. The sidebar isolates key buyer questions (Who's it for? What sectors? How do I deploy?) so decision-makers can scan without reading the full doc. The Secuvy brand blue is used sparingly to maintain professionalism.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 
