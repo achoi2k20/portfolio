@@ -75,6 +75,33 @@ export default function Secuvy() {
         </div>
       </section>
 
+      {/* 03b — Solution Brief Write-up */}
+      <section className="home-work">
+        <div className="home-work-inner">
+          <div className="secuvy-writeup">
+            <h3 className="secuvy-writeup-title">Secuvy AI — Solution Brief</h3>
+            <div className="secuvy-writeup-block">
+              <span className="secuvy-writeup-label">Overview</span>
+              <p className="secuvy-section-body">
+                A single-page sales document designed to communicate Secuvy's value proposition to enterprise buyers. The brief introduces the problem, solution, and key outcomes in a structured, scannable layout — built for a sales or partnership context with Hammerspace.
+              </p>
+            </div>
+            <div className="secuvy-writeup-block">
+              <span className="secuvy-writeup-label">Design decisions</span>
+              <p className="secuvy-section-body">
+                The layout uses a clear two-column structure: a wider editorial column on the left for narrative content, and a tighter sidebar on the right for quick-reference information (target outcomes, audience, sectors, deployment). A dark navy header callout draws immediate attention to the "Target Outcomes" section. The bottom strip of three feature tiles (Autoclassification, Contextual Linkage, Trusted Data Plane) anchors the page with product proof points without disrupting the reading flow above.
+              </p>
+            </div>
+            <div className="secuvy-writeup-block">
+              <span className="secuvy-writeup-label">What works</span>
+              <p className="secuvy-section-body">
+                Strong visual hierarchy — the bold headline "Your AI Is Ingesting Unclassified Data." is provocative and specific. The sidebar isolates key buyer questions (Who's it for? What sectors? How do I deploy?) so decision-makers can scan without reading the full doc. The Secuvy brand blue is used sparingly to maintain professionalism.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 04 — Website Design */}
       <section className="home-work">
         <span className="home-sec-num">04</span>
@@ -93,6 +120,33 @@ export default function Secuvy() {
                 trustworthy data platform. The design emphasizes clean layout, strong
                 typographic hierarchy, and purposeful use of negative space to let the
                 product story breathe.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 04b — Marketing Website Write-up */}
+      <section className="home-work">
+        <div className="home-work-inner">
+          <div className="secuvy-writeup">
+            <h3 className="secuvy-writeup-title">Secuvy AI — Marketing Website</h3>
+            <div className="secuvy-writeup-block">
+              <span className="secuvy-writeup-label">Overview</span>
+              <p className="secuvy-section-body">
+                A full marketing homepage for an enterprise data security company. The site spans multiple distinct sections — hero, problem/solution, feature comparison, platform overview, CTA, and footer — designed to convert both technical and executive buyers visiting from different entry points.
+              </p>
+            </div>
+            <div className="secuvy-writeup-block">
+              <span className="secuvy-writeup-label">Design decisions</span>
+              <p className="secuvy-section-body">
+                The hero leads with social proof (a podcast guest appearance) rather than a product screenshot — a deliberate credibility-first choice for an enterprise audience that is skeptical of vendor claims. A dark background with glowing blue accents signals a modern security product. The "Before Secuvy / With Secuvy" comparison table is one of the strongest UX decisions: it directly mirrors how buyers frame the problem internally ("what's our situation today vs. with this vendor?"). The four platform pillars are presented as equal-weight cards, avoiding hierarchy that would imply any one capability is more important.
+              </p>
+            </div>
+            <div className="secuvy-writeup-block">
+              <span className="secuvy-writeup-label">What works</span>
+              <p className="secuvy-section-body">
+                The headline "Data Security Shouldn't Require a PhD in RegEx" is audience-savvy — it speaks directly to security practitioners frustrated by legacy tooling. The page structure moves from problem awareness, proof, solution, CTA in a logical narrative arc. The footer is comprehensive without being cluttered, giving enterprise buyers the product taxonomy they need to understand the platform's scope.
               </p>
             </div>
           </div>

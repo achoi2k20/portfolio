@@ -508,6 +508,41 @@
   color: #555;
 }
 
+.secuvy-writeup {
+  display: flex;
+  flex-direction: column;
+}
+
+.secuvy-writeup-title {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #111;
+  margin: 0 0 0 0;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.secuvy-writeup-block {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.secuvy-writeup-label {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #666;
+  padding-top: 0.2rem;
+}
+
 /* ── Tagline ── */
 .home-tagline-section {
   background: #111;
