@@ -543,6 +543,16 @@
   padding-top: 0.2rem;
 }
 
+.secuvy-writeup--inline {
+  margin-top: 1.5rem;
+}
+
+.secuvy-writeup-block--inline {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
 /* ── Tagline ── */
 .home-tagline-section {
   background: #111;
