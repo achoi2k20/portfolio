@@ -2,87 +2,105 @@ import React from 'react'
 import './pages.css'
 import { Link } from 'react-router-dom'
 
-
 export default function Projects() {
   return (
-    <div className="projects-container">
-      <nav className="navbar">
+    <div className="home-wrapper">
+      <nav className="navbar cs-nav">
         <div className="nav-logo">
-            <a href="/">
-                <img src="/logo.png" alt="Logo" />
-            </a>
+          <a href="/"><img src="/logo.png" alt="Logo" /></a>
         </div>
-        <ul className="nav-links">
-          <li><a href="/">Home</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/about">About</a></li>
+        <ul className="nav-links home-nav-links">
+          <li><a href="/projects">PROJECTS <span className="nav-arrow">↗</span></a></li>
+          <li><a href="/about">ABOUT <span className="nav-arrow">↗</span></a></li>
         </ul>
       </nav>
 
-      <div className="projects-text">
-        <h1>Projects</h1>
-        <p>Here are some of the projects I’ve worked on.</p>
+      {/* 01 — Hero */}
+      <section className="home-banner cs-hero">
+        <span className="home-sec-num">01</span>
+        <div className="home-banner-inner">
+          <div className="home-banner-text">
+            <span className="banner-line">selected</span>
+            <span className="banner-line banner-line--italic">work.</span>
+          </div>
+          <p className="home-banner-sub">
+            A collection of UX, product, and visual design projects — from
+            research-driven prototypes to branded digital experiences.
+          </p>
+        </div>
+      </section>
 
-        <div className="project-list">
-            <div className="project-card">
-                <Link to="/projects/ux4xr" className="project-link">
-                    <video className="project-media" controls muted loop>
-                        <source src="/projects/ux4xr_demo.mp4" type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
-                    <div className="project-info">
-                        <h2>UX4XR IDM Floor Redesign</h2>
-                        <p>Using user interviews and research, I redesigned the Integrated Design and Media floor at 370 Jay Street. I utilized Unity and Blender to simulate the classrooms and scale of the floor. It is designed to be used with VR headsets as well.</p>
-                    </div>
-                </Link>
-            </div>
-      
-           <div className="project-card">
-                <Link to="/projects/funtent" className="project-link">
-                <img src="/projects/funtentmockup.png" alt="Project Screenshot" className="project-media" />
-                <div className="project-info">
-                    <h2>FUNTENT</h2>
-                    <p>Mockups of screens for FUNTENT, child-friendly streaming service created for UX Design course. Created problem statement, wireframed and prototyped mobile application, and conducted user research.</p>
+      {/* 02 — Project grid */}
+      <section className="home-work">
+        <span className="home-sec-num home-sec-num--right">02</span>
+        <div className="home-work-inner">
+          <h2 className="home-work-title">projects.</h2>
+          <div className="projects-grid">
+            <Link to="/projects/ux4xr" className="projects-card-link">
+              <div className="projects-card">
+                <video className="projects-card-media" src="/projects/ux4xr_demo.mp4" autoPlay muted loop playsInline />
+                <div className="projects-card-label">
+                  <span className="projects-card-title">UX4XR IDM Floor Redesign</span>
+                  <span className="projects-card-type">UX Research &amp; Design</span>
                 </div>
-                </Link>
-            </div>
-            <div className="project-card">
-                <Link to="/projects/globalgourmet" className="project-link">
-                <video className="project-media" controls muted loop>
-                    <source src="/projects/globalgourmet_animatedlockupfinal.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
-                <div className="project-info">
-                    <h2>Global Gourmet Identity Application</h2>
-                    <p>Created products for Global Gourmet and applied brand guidelines. Created recipe sheets that are a part of food package, recipe video that accompanies the sheet, and an animated lockup to be used in videos and other applications.</p>
+              </div>
+            </Link>
+
+            <Link to="/projects/funtent" className="projects-card-link">
+              <div className="projects-card">
+                <img src="/projects/funtentmockup.png" alt="Funtent" className="projects-card-media" />
+                <div className="projects-card-label">
+                  <span className="projects-card-title">Funtent</span>
+                  <span className="projects-card-type">UX Design</span>
                 </div>
-                </Link>
-            </div>
-            <div className="project-card">
-                <Link to="/projects/escapi" className="project-link">
-                <img src="/projects/room1.png" alt="Project Screenshot" className="project-media" />
-                <div className="project-info">
-                    <h2>escAPI</h2>
-                    <p>This project is a first-person escape room game built with a Three.js scene integrated into React. It features interactive 3D models, animations, camera controls, and object collision detection.</p>
+              </div>
+            </Link>
+
+            <Link to="/projects/globalgourmet" className="projects-card-link">
+              <div className="projects-card">
+                <video className="projects-card-media" src="/projects/globalgourmet_animatedlockupfinal.mp4" autoPlay muted loop playsInline />
+                <div className="projects-card-label">
+                  <span className="projects-card-title">Global Gourmet Identity</span>
+                  <span className="projects-card-type">Brand &amp; Motion</span>
                 </div>
-                </Link>
-            </div>
-            <div className="project-card">
-                <img src="/projects/twitchmockup.png" alt="Project Screenshot" className="project-media" />
-                <div className="project-info">
-                    <h2>Twitch Mobile Redesign</h2>
-                    <p>Twitch's mobile redesign brings a sleek, more intuitive user experience, making it easier than ever to discover and engage with content on the go. The update introduces a refreshed interface with streamlined navigation, improved performance, and enhanced video player features. </p>
+              </div>
+            </Link>
+
+            <Link to="/projects/escapi" className="projects-card-link">
+              <div className="projects-card">
+                <img src="/projects/room1.png" alt="escAPI" className="projects-card-media" />
+                <div className="projects-card-label">
+                  <span className="projects-card-title">escAPI</span>
+                  <span className="projects-card-type">Development</span>
                 </div>
+              </div>
+            </Link>
+
+            <div className="projects-card">
+              <img src="/projects/twitchmockup.png" alt="Twitch Mobile Redesign" className="projects-card-media" />
+              <div className="projects-card-label">
+                <span className="projects-card-title">Twitch Mobile Redesign</span>
+                <span className="projects-card-type">UI Redesign</span>
+              </div>
             </div>
-            <div className="project-card">
-                <img src="/projects/youtubemockup.png" alt="Project Screenshot" className="project-media" />
-                <div className="project-info">
-                    <h2>Youtube Live Redesign</h2>
-                    <p>Youtube's live feature has been under utilized. I have taken user reviews and created a different UI, improving discoverability and functionality.</p>
-                </div>
+
+            <div className="projects-card">
+              <img src="/projects/youtubemockup.png" alt="Youtube Live Redesign" className="projects-card-media" />
+              <div className="projects-card-label">
+                <span className="projects-card-title">Youtube Live Redesign</span>
+                <span className="projects-card-type">UI Redesign</span>
+              </div>
             </div>
-         </div>
-      </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 03 — Closing tagline */}
+      <section className="home-tagline-section">
+        <p className="home-tagline-text">
+          let's build<br />something great.
+        </p>
+      </section>
     </div>
   )
 }
