@@ -76,6 +76,16 @@ export default function Projects() {
               </div>
             </Link>
 
+            <Link to="/projects/sift" className="projects-card-link">
+              <div className="projects-card">
+                <img src="/projects/sift_hero.png" alt="Sift" className="projects-card-media" />
+                <div className="projects-card-label">
+                  <span className="projects-card-title">Sift</span>
+                  <span className="projects-card-type">Product &amp; UX Design</span>
+                </div>
+              </div>
+            </Link>
+
             <Link to="/projects/keoni" className="projects-card-link">
               <div className="projects-card">
                 <img src="/projects/keoni_hero.png" alt="Keoni Paoner" className="projects-card-media" />

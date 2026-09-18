@@ -49,6 +49,7 @@ export default function Home() {
                 <li><a href="/projects/funtent">Funtent</a></li>
                 <li><a href="/projects/ux4xr">UX4XR</a></li>
                 <li><a href="/projects/escapi">escAPI</a></li>
+                <li><a href="/projects/sift">Sift</a></li>
               </ul>
             </div>
             <div className="home-work-cat">
