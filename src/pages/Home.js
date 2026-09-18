@@ -85,6 +85,15 @@ export default function Home() {
               </div>
             </div>
           </a>
+          <a href="/projects/keoni" className="home-showcase-link">
+            <div className="home-showcase-card">
+              <img src="/projects/keoni_hero.png" alt="Keoni Paoner Portfolio Site" />
+              <div className="home-showcase-label">
+                <span className="showcase-title">Keoni Paoner</span>
+                <span className="showcase-type">Web Design</span>
+              </div>
+            </div>
+          </a>
         </div>
       </section>
 
