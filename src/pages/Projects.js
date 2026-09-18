@@ -76,6 +76,16 @@ export default function Projects() {
               </div>
             </Link>
 
+            <Link to="/projects/keoni" className="projects-card-link">
+              <div className="projects-card">
+                <img src="/projects/keoni_hero.png" alt="Keoni Paoner" className="projects-card-media" />
+                <div className="projects-card-label">
+                  <span className="projects-card-title">Keoni Paoner</span>
+                  <span className="projects-card-type">Web Design</span>
+                </div>
+              </div>
+            </Link>
+
             <div className="projects-card">
               <img src="/projects/twitchmockup.png" alt="Twitch Mobile Redesign" className="projects-card-media" />
               <div className="projects-card-label">
