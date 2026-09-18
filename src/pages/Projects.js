@@ -96,6 +96,16 @@ export default function Projects() {
               </div>
             </Link>
 
+            <Link to="/projects/royalthaispa" className="projects-card-link">
+              <div className="projects-card">
+                <img src="/projects/royalthai_hero.png" alt="Royal Thai Spa" className="projects-card-media" />
+                <div className="projects-card-label">
+                  <span className="projects-card-title">Royal Thai Spa</span>
+                  <span className="projects-card-type">Web Design</span>
+                </div>
+              </div>
+            </Link>
+
             <div className="projects-card">
               <img src="/projects/twitchmockup.png" alt="Twitch Mobile Redesign" className="projects-card-media" />
               <div className="projects-card-label">

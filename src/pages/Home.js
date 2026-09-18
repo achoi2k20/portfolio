@@ -95,6 +95,15 @@ export default function Home() {
               </div>
             </div>
           </a>
+          <a href="/projects/royalthaispa" className="home-showcase-link">
+            <div className="home-showcase-card">
+              <img src="/projects/royalthai_hero.png" alt="Royal Thai Spa Redesign" />
+              <div className="home-showcase-label">
+                <span className="showcase-title">Royal Thai Spa</span>
+                <span className="showcase-type">Web Design</span>
+              </div>
+            </div>
+          </a>
         </div>
       </section>
 

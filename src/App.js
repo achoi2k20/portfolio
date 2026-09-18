@@ -10,6 +10,7 @@ import Funtent from './pages/Funtent'
 import Secuvy from './pages/Secuvy'
 import Keoni from './pages/Keoni'
 import Sift from './pages/Sift'
+import RoyalThaiSpa from './pages/RoyalThaiSpa'
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
       <Route path="/projects/secuvy" element={<Secuvy />} />
       <Route path="/projects/keoni" element={<Keoni />} />
       <Route path="/projects/sift" element={<Sift />} />
+      <Route path="/projects/royalthaispa" element={<RoyalThaiSpa />} />
     </Routes>
   )
 }
