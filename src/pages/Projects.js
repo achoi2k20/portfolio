@@ -36,6 +36,36 @@ export default function Projects() {
         <div className="home-work-inner">
           <h2 className="home-work-title">projects.</h2>
           <div className="projects-grid">
+            <Link to="/projects/royalthaispa" className="projects-card-link">
+              <div className="projects-card">
+                <img src="/projects/royalthai_hero.png" alt="Royal Thai Spa" className="projects-card-media" />
+                <div className="projects-card-label">
+                  <span className="projects-card-title">Royal Thai Spa</span>
+                  <span className="projects-card-type">Web Design</span>
+                </div>
+              </div>
+            </Link>
+
+            <Link to="/projects/sift" className="projects-card-link">
+              <div className="projects-card">
+                <img src="/projects/sift_hero.png" alt="Sift" className="projects-card-media" />
+                <div className="projects-card-label">
+                  <span className="projects-card-title">Sift</span>
+                  <span className="projects-card-type">Product &amp; UX Design</span>
+                </div>
+              </div>
+            </Link>
+
+            <Link to="/projects/keoni" className="projects-card-link">
+              <div className="projects-card">
+                <img src="/projects/keoni_hero.png" alt="Keoni Paoner" className="projects-card-media" />
+                <div className="projects-card-label">
+                  <span className="projects-card-title">Keoni Paoner</span>
+                  <span className="projects-card-type">Web Design</span>
+                </div>
+              </div>
+            </Link>
+
             <Link to="/projects/ux4xr" className="projects-card-link">
               <div className="projects-card">
                 <video className="projects-card-media" src="/projects/ux4xr_demo.mp4" autoPlay muted loop playsInline />
@@ -72,36 +102,6 @@ export default function Projects() {
                 <div className="projects-card-label">
                   <span className="projects-card-title">escAPI</span>
                   <span className="projects-card-type">Development</span>
-                </div>
-              </div>
-            </Link>
-
-            <Link to="/projects/sift" className="projects-card-link">
-              <div className="projects-card">
-                <img src="/projects/sift_hero.png" alt="Sift" className="projects-card-media" />
-                <div className="projects-card-label">
-                  <span className="projects-card-title">Sift</span>
-                  <span className="projects-card-type">Product &amp; UX Design</span>
-                </div>
-              </div>
-            </Link>
-
-            <Link to="/projects/keoni" className="projects-card-link">
-              <div className="projects-card">
-                <img src="/projects/keoni_hero.png" alt="Keoni Paoner" className="projects-card-media" />
-                <div className="projects-card-label">
-                  <span className="projects-card-title">Keoni Paoner</span>
-                  <span className="projects-card-type">Web Design</span>
-                </div>
-              </div>
-            </Link>
-
-            <Link to="/projects/royalthaispa" className="projects-card-link">
-              <div className="projects-card">
-                <img src="/projects/royalthai_hero.png" alt="Royal Thai Spa" className="projects-card-media" />
-                <div className="projects-card-label">
-                  <span className="projects-card-title">Royal Thai Spa</span>
-                  <span className="projects-card-type">Web Design</span>
                 </div>
               </div>
             </Link>
